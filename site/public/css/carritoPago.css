@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pagination {
+    margin-top: 20px;
+}
+
+.titulo {
+    margin-bottom: 15px;
+}
+
+#boton{
+    min-width: min-content;
+}
+
+.formulariosDatos{
+    background-color: black;
+    position: relative;
+    top: 110px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h6{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h5{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+input{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.valores{
+    justify-content: space-between;
+}
+
+div a {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h4{
+    font-family: 'Barlow Condensed', 'sans-serif';
+    font-size: 20px;
+}
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 65vh;
+    background-color: black;
+    margin-top: 100px;
+}
+
+div figure img {
+    width: 25%;
+}
+
+footer div a {
+    color: white;
+}
+
+.cartaFooter {
+    border: 0px
+}
+
+.contacto {
+    margin-top: 10px;
+}
+
+.redes {
+    padding-top: 20px;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+/* FOOTER */
+
+/* MEDIA QUERY 360 */
+@media (min-width: 360px){
+    .footer {
+        height: 60vh;
+    }
+
+}
+/* MEDIA QUERY 360 */
+
+/* MEDIA QUERY 768 */
+@media (min-width: 768px ){
+    .footer {
+        height: 180px;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+<<<<<<< HEAD
+=======
+    .redes {
+        margin-top: 10px;
+    }
+
+>>>>>>> 5b0bae42f3b5b93f080b9465d62de440b29e0799
+}
+/* MEDIA QUERY 768 */
+
+@media (min-width: 1024px ){
+    h4{
+        font-size: 30px;
+    }
+
+    .contacto {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    .footer {
+        height: 25vh;
+    }
+
+}
+
+/* MEDIA QUERY 1440 */
+@media (min-width: 1440px){
+    *{
+        justify-content: space-around;
+    }
+
+    
+    /* FOOTER */
+    .footer {
+        width: 100%;
+        height: 24vh;
+        background-color: black;
+        margin-top: 100px;
+    }
+    
+    div figure img {
+        width: 25%;
+    }
+    
+    footer div a {
+        color: white;
+    }
+    
+    .cartaFooter {
+        border: 0px
+    }
+
+    .contacto {
+        margin-top: 10px;
+    }
+   
+    .redes {
+        padding-top: 20px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+/* MEDIA QUERY 1440 */

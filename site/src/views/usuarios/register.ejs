@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Bykes - Make it yours</title>
+</head>
+<body>
+
+    <main class="container">
+      <!--navbar-->
+      <%- include('../partials/headerBlanco.ejs') %>
+
+
+      <!--Formularios-->
+      
+        <div class="formularios row">
+              
+
+              <form id="register" class="register col-10 col-sm-12 col-md-6 col-lg-g col-xl-6  col-12" action="/register" method="POST" enctype="multipart/form-data">  
+                <!--errores del FRONT END-->
+                <div>
+                  <ul id="errores" class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px; color: red;">
+                  </ul>
+                </div>              
+                    
+                <h2 class="border-bottom border-light border-solid">REGISTRARSE</h2>
+
+                <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <br>
+                        <input type="text" class="form-control" name="nombre" placeholder="Nombre" value="<%= typeof old != 'undefined' ? old.nombre : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.nombre){%>
+                          <span class="text-danger" style="font-weight: 800;" > <%= errors.nombre.msg %></span>
+                          <%}%>
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
+                        <br>
+                        <input type="text" class="form-control" placeholder="Apellido" name="apellido" value="<%= typeof old != 'undefined' ? old.apellido : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.apellido){%>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.apellido.msg %></span>
+                          <%}%>
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
+                        
+                        <input type="number" class="form-control" name="dni" value="<%= typeof old != 'undefined' ? old.dni : '' %>" placeholder="DNI">
+                        <% if(typeof errors != 'undefined' && errors.dni){%>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;" > <%= errors.dni.msg %></span>
+                          <%}%>
+                      </div>
+                      
+                      <div class="col-md-6 mb-3">
+                        
+                        <input type="number" class="form-control" placeholder="Teléfono" value="<%= typeof old != 'undefined' ? old.telefono : '' %>" name="telefono">
+                      </div>
+                </div>
+                <div class="form-row">
+                      <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Dirección" name="direccion" value="<%= typeof old != 'undefined' ? old.direccion : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.direccion){%>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.direccion.msg %></span>
+                          <%}%>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <input type="text" class="form-control" placeholder="Piso y Dto." name="pisoDepto" value="<%= typeof old != 'undefined' ? old.pisoDepto : '' %>">
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <input type="number" name="cp" placeholder="CP" class="form-control" value="<%= typeof old != 'undefined' ? old.cp : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.cp){%>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.cp.msg %></span>
+                          <%}%>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Provincia" name="provincia" value="<%= typeof old != 'undefined' ? old.provincia : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.provincia){%>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.provincia.msg %></span>
+                          <%}%>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Localidad" name="localidad" value="<%= typeof old != 'undefined' ? old.localidad : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.localidad){%>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.localidad.msg %></span>
+                          <%}%>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Email" name="email" value="<%= typeof old != 'undefined' ? old.email : '' %>">
+                        <% if(typeof errors != 'undefined' && errors.email){%>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.email.msg %></span>
+                          <%}%>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="password">
+                        <% if(typeof errors != 'undefined' && errors.password){%>
+                          <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.password.msg %></span>
+                          <%}%>
+                      </div>
+                </div>
+                <div class="custom-file mb-3">
+                  <input type="file" class="custom-file-input" id="validatedCustomFile" name="imagen">
+                  <% if(typeof errors != 'undefined' && errors.imagen){%>
+                    <span class="text-danger p-0.8" style="font-weight: 800; background-color: rgba(0, 0, 0, 0.6); border-radius: 2px;"> <%= errors.imagen.msg %></span>
+                    <%}%>
+                  <label class="custom-file-label" for="validatedCustomFile">Foto de perfil</label>
+                </div>
+                <div class="form-group">
+                <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" required>
+                        <label class="terminos form-check-label">
+                          Acepto los terminos y condiciones.
+                        </label>
+                </div>
+                <br>
+                <a href="/login"><button class="btn btn-primary btn-dark" type="submit" style="background-color: black;">Registrarme</button></a>
+                <a href="/login" class="btn btn-primary btn-danger" style="background-color: #FF6000 ; border: orangered">Ya tengo cuenta</a>
+              </form>
+              
+        </div> 
+      </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="/js/register.js"></script>
+</body>
+</html>

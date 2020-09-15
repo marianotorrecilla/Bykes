@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/carritoEnvio.css">        
+    <title>Bykes - Make it yours</title>
+</head>
+<body>
+<main class="container-fluid">
+
+      <br>
+      <br>
+    <!--Paginación-->
+    <nav aria-label="...">
+      <br>
+      <br>
+        <ul class="pagination pagination-lg justify-content-center">
+          <li class="page-item active bg-dark" aria-current="page">
+            <a class="page-link" href="#" style="background-color: black; border: black">1. Envío</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="/carrito/pago">2. Pago</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="/carrito/confirmacion">3. Confirmación</a>
+          </li>
+        </ul>
+      </nav>
+      <br>
+
+      
+      <section class="row justify-content-center">
+        <div class="formulario forms row col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">        
+          <!--Register y envio-->
+          <form class="register col-11">
+
+                              
+              
+              <h2 class="border-bottom border-dark">INGRESA TUS DATOS</h2>
+
+                  <div class="form-row">
+                                  <div class="col-md-6 mb-3">
+                                      <br>
+                                      <input type="text" class="form-control" id="validationServer01" name="nombre" required placeholder="Nombre">
+                                  </div>
+                                  
+                                  <div class="col-md-6 mb-3">
+                                      <br>
+                                      <input type="text" class="form-control" id="validationServer02" placeholder="Apellido" name="apellido" required>
+                                  </div>
+                                  
+                                  <div class="col-md-6 mb-3">
+                                      
+                                      <input type="number" class="form-control" id="validationServer01" name="dni" required placeholder="DNI">
+                                  </div>
+                                  
+                                  <div class="col-md-6 mb-3">
+                                      
+                                      <input type="tel" class="form-control" id="validationServer02" placeholder="Telefono" name="telefono" required>
+                                  </div>
+                  </div>
+                  <div class="form-row">
+                                      <div class="col-md-6 mb-3">
+                                          <input type="text" class="form-control" id="validationServer03" placeholder="Dirección" name="direccion" required>
+                                      </div>
+                                      <div class="col-md-3 mb-3">
+                                          <input type="text" class="form-control" id="validationServer03" placeholder="Piso y Dto." name="piso&depto" required>
+                                      </div>
+                                      <div class="col-md-3 mb-3">
+                                          <input type="number" name="cp" placeholder="CP" class="form-control" id="validationServer05" required>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                          <input type="text" class="form-control" id="validationServer03" placeholder="Provincia" name="provincia" required>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                          <input type="text" class="form-control" id="validationServer03" placeholder="Localidad" name="localidad" required>
+                                      </div>
+                                      <div class="col-md-6 mb-3">
+                                          <input type="email" class="form-control" id="validationServer03" placeholder="Email" name="email" required>
+                                      </div>
+                  </div>           
+                  <div class="form-group">
+                                  <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" required>
+                                          <label class="terminos form-check-label">
+                                          Acepto los terminos y condiciones.
+                                          </label>
+                                  </div>
+                  </div>
+
+              <!--Formas de Envío-->
+              <h2>Formas de envío</h2>                                
+                  <div class="pago form-group">
+
+                
+                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" value="retiroEnLocal" id="retiroEnLocal" name="tipoDeEnvio">
+                                              <label class="form-check-label" for="retiroEnLocal">Retiro en local</label>
+                          </div>
+                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" value="envioStandar" id="envioStandar" name="tipoDeEnvio">
+                                              <label class="form-check-label" for="envioStandar">Envío Standar</label>
+                          </div>
+                          <div class="form-check">
+                          <input class="form-check-input" type="radio" value="envioExpress" id="retiroEnLocal" name="tipoDeEnvio">
+                          <label class="form-check-label" for="retiroEnLocal">Envío express</label>
+                          </div>
+
+                  </div>
+              <a type="submit" href="/carrito/pago" class="btn btn-dark btn-lg btn-block" style="background-color: black">CONTINUAR CON EL PAGO</a>
+          </form>            
+        </div>
+
+        <div class=" iniciar column col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <!--Iniciar Sesion-->
+          <form class="login col-11">
+            <h2 class="border-bottom border-dark">INICIAR SESION</h2>
+                  
+                <div class="form-group">
+            <br>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                </div>
+                <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                </div>
+
+            <button type="submit" class="btn btn-primary btn-dark" style="background-color: black">Iniciar Sesión</button>
+          </form>  
+          <br>
+          <!--Resumen con foto-->
+          <div class="resumen card col-11">
+            <div class="card-body">
+              <h2 class="card-title">Resumen del pedido</h2>
+            </div>
+            <article class="valores row">
+              <div class="col-6">
+                <h6>Costo</h6>
+                <br>
+                <h6>Descuento</h6>
+                <br>
+                <h6>Envío</h6>
+                <br>
+              </div>
+              <div class="col-6">
+                <h6>Valor</h6>
+                <br>
+                <h6>Valor</h6>
+                <br>
+                <h6>Valor</h6>
+                <br>
+              </div>
+            </article>
+
+            <div class="card mb-3">
+              <div class="row no-gutters">   
+                <div class="col-md-4">
+                  <img src="/img/fixievioleta.jpg" class="card-img" alt="No se puede mostrar la imagen">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Scott - Speedster 10</h5>
+                    <button type="button" class="btn btn-dark" style="background-color: black; font-family: 'Barlow Condensed', sans-serif;" data-toggle="modal" data-target="#exampleModal">Detalle del Producto</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Scott - Speedster 10</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h6 class="card-title">Especificaciones técnicas</h6>
+                            <p class="card-text">La nueva Speedster es más ligera y presenta su mejor estilo. El nuevo kit de cuadro incluye una horquilla de carbono, cableado interior, dirección cónica y una geometría de prestaciones. Cambios Shimano 105 Black ST-5800 Dual control 22 Speed. Rodado 29 en talle de cuadro M</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal" style="background-color: black">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <%- include('../partials/footer.ejs') %>
+
+
+      
+
+</main>
+</body>
+</html>

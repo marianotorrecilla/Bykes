@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/customproductos.css">
+    <title>Bykes - Make it Yours</title>
+</head>
+<body>
+    <main class="container-fluid">
+        <!--Navbar-->
+        <%- include('../partials/headerNegro.ejs') %> 
+        
+        <!--Listado de Productos-->
+        <section class="row cuerpo">
+    
+          <article class="titulo col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <h5>CUSTOM</h5>
+          </article>
+
+          <article class="fotoProducto col-12 col-sm-12 col-md-6 col-lg-7 col-xl-7">
+            <div class="card bg-transparent text-white border-dark">
+              <figure class="bici">
+                <img src="/img/fixievioleta.jpg" class="card-img" alt="...">
+              </figure>
+            </div>
+          </article>
+    
+          <article class=" miSeleccion col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+              <!--ETAPA 1 CUADRO-->
+              <div class="accordion" id="accordionExample">
+                  <div class="card">
+                      <div class="card-header" id="headingOne">
+                          <h2 class="mb-0">
+                              <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">1- Cuadro +</button>
+                          </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body cuadro">
+                              <!--<h6>1- Cuadro +</h6>-->
+                                <div class="estilocolor">
+                                    <a>Estilo de Color</a>
+                                    <form action="">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Mate</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Brillante</label>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <br>
+
+                                  <div class="colorcuadro">
+                                    <form action="">
+                                      <a>Colores del cuadro</a>
+                                      <br>
+                                      <a>Color Principal</a>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3">Negro</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option2">
+                                          <label class="form-check-label" for="inlineRadio4">Cobre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option2">
+                                          <label class="form-check-label" for="inlineRadio5">Azul</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Verde</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Naranja</label>
+                                      </div>
+                                      <br>
+                                      </form>
+                                      <form action="">
+                                      <a>Color secundario</a>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Gris</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Blanco</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Azul</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Verde</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Naranja</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Negro</label>
+                                      </div>
+                                      </form>
+                                  </div>
+                                  <br>
+
+                                  <div class="colorhorquilla">
+                                    <form action="">
+                                      <a>Colores de horquilla</a>
+                                      <br>
+                                      <a>Color Principal</a>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Negro</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Cobre</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Azul</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Verde</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Naranja</label>
+                                      </div>
+                                    </form>
+                                      <form action="">
+                                      <a>Color Secundario</a>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Gris</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Blanco</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Azul</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Verde</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Naranja</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">Negro</label>
+                                      </div>
+                                    </form>
+                                  </div>
+                                  <br>
+
+                                  <div class="tallecuadro">
+                                    <form action="">
+                                      <a>Talle del cuadro</a>
+                                      <br>
+                                      <a>27".5</a>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">S</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">M</label>
+                                      </div>
+                                      <a>29"</a>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">S</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">M</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">L</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                          <label class="form-check-label" for="inlineRadio2">XL</label>
+                                      </div>
+                                    </form>
+                                  </div>
+                              </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                <!---ETAPA 2 RUEDAS-->
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2- Ruedas +</button>
+                        </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body ruedas">
+                        <!--<h6>2- Ruedas +</h6>-->
+                        <div class="colorrayos">
+                          <form action="">
+                          <a>Colores de rayos</a>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Negro</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Cobre</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Azul</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Metal</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Naranja</label>
+                          </div>
+                          </form>
+                        </div>
+                        <br>
+
+                        <div class="colorbuge">
+                          <a>Color de buge</a>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Negro</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Cobre</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Azul</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Blanco</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Dorado</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label" for="inlineRadio2">Metal</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                <!--ETAPA 3 EQUIPAMIENTO-->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">3- Equipamiento +</button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body equipamiento">
+                          <!--<h6>3- Equipamiento +</h6>-->
+                          <form action="">
+                            <a>Shimano</a>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Tourney</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Altus</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Deore</label>
+                            </div>
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            
+          </article>
+
+
+          <!--Resumen y espc tecnicas-->
+          <article class="carta col-12 col-sm-12 col-md-10 col-lg-10 col-xl-7">
+    
+            <div class="row row-cols-1 row-cols-sm-12 row-cols-md-7 row-cols-lg-7 row-cols-xl-7">
+              <div class="cartaDos col mb-2">
+                <div class="card h-100 border-dark">
+                  <div class="card-body">
+                    <h6 class="card-title">Especificaciones técnicas</h6>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem dicta nisi ab harum voluptates recusandae asperiores. Aliquid voluptatem, necessitatibus asperiores laboriosam vitae consequuntur? Minus voluptatibus provident alias dicta ut!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cartaTres col mb-2">
+                <div class="card h-100 border-dark">
+                  <div class="card-body">
+                    <h6 class="card-title">Precio: $45.000</h6>
+                    <p class="card-text">12 cuotas sin interes con Visa y Mastercard.</p>
+                    <a href="/carrito/lista" class="comprar"><button type="button" class="btn btn-dark btn-lg" style="background-color: black">COMPRAR</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </article>
+        
+
+        </section>
+    
+        <!--Footer-->
+        <%- include('../partials/footer.ejs') %>
+        
+      
+    
+      </main>
+</body>
+</html>

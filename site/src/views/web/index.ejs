@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/masterhome.css">
+    <title>Bykes - Make it yours</title>
+
+</head>
+<body>
+  <main class="container-fluid">
+    <!--Navbar-->
+    <%- include('../partials/headerBlanco.ejs') %>
+    
+    <!--Listado de Productos-->
+    <section class="row">
+
+      <article class="col-12">
+        <div class="card bg-transparent text-white border-0">
+          <img src="img/fixiecobre.jpg" class="card-img" alt="Bicicleta">
+          <div class="card-img-overlay">
+            <h5 class="card-title text-center pt-30">COMPARATE CON VOS MISMO HACE ALGÚN TIEMPO ATRÁS</h5>
+            <h6 class="card-title text-center pt-30">Make it yours</h6>
+            <a href="/productos/custom" class="d-flex justify-content-center"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Customizar</button></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-12">
+        <div class="card bg-transparent text-white border-0">
+          <img src="img/servport1.jpg" class="card-img" alt="Bicicleta">
+          <div class="card-img-overlay" style="color: black">
+            <h5 class="card-title text-center pt-30">QUEREMOS REDEFINIR LA BICICLETA</h5>
+            <h6 class="card-title text-center pt-30">Tenemos los mejores modelos y estilos</h6>
+          </div>
+        </div>
+      </article>
+
+
+
+      <% for(let i = 0; i < bicicletas.length; i++){ %>
+        <% if (bicicletas[i].id <= 37) { %>
+          <article class="col-12">
+            <div class="card bg-transparent text-white border-0">
+              <img src="/images/bicicletas/<%= bicicletas[i].image%> " class="card-img" alt="Bicicleta">
+              <div class="card-img-overlay">
+                <h5 class="titulo card-title text-center mt-30 pt-30"><%= bicicletas[i].brand%> - <%= bicicletas[i].model%></h5>
+                <a href="/productos/detalle/<%= bicicletas[i].id%>" class="d-flex justify-content-center"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                Ver Más</button></a>
+              </div>
+            </div>
+          </article> 
+        <% } %>
+      <% } %>
+
+      <article class="col-12">
+        <div class="card bg-transparent text-white border-0">
+          <img src="img/servport2.jpg" class="card-img" alt="Bicicleta">
+          <div class="card-img-overlay" style="color: black">
+            <h5 class="card-title text-center pt-30">TE OFRECEMOS LA OPORTUNIDAD DE PLASMAR TU IDENTIDAD</h5>
+            <h6 class="card-title text-center pt-30">Armá tu propia bicicleta</h6>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-12">
+        <div class="card bg-transparent text-white border-0">
+          <img src="img/biciPortada.jpg" class="card-img" alt="Bicicleta">
+          <div class="card-img-overlay">
+            <h5 class="titulo card-title text-center pt-30">COMPARATE CON VOS MISMO HACE ALGÚN TIEMPO ATRÁS</h5>
+            <h6 class="titulo card-title text-center pt-30">Make it yours</h6>
+            <a href="/productos/custom" class="d-flex justify-content-center"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Customizar</button></a>
+          </div>
+        </div>
+      </article>
+
+      <% for(let i = 4; i < bicicletas.length; i++){ %>
+        <% if (bicicletas[i].id <= 40) { %>
+          <article class="col-12">
+            <div class="card bg-transparent text-white border-0">
+              <img src="/images/bicicletas/<%= bicicletas[i].image%> " class="card-img" alt="Bicicleta">
+              <div class="card-img-overlay">
+                <h5 class="titulo card-title text-center mt-30 pt-30"><%= bicicletas[i].brand%> - <%= bicicletas[i].model%></h5>
+                <a href="/productos/detalle/<%= bicicletas[i].id%>" class="d-flex justify-content-center"><button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+                Ver Más</button></a>
+              </div>
+            </div>
+          </article> 
+        <% } %>
+      <% } %>
+
+    </section>
+
+    <%- include('../partials/footer.ejs') %>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/carritoConfirmacion.css">
+    <title>Bykes - Make it yours</title>
+
+</head>
+<body>
+  <main class="container-fluid">
+      <br>
+      <br>   
+      <!--Paginación-->
+      <nav class="column col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 margin-auto text-center" aria-label="...">
+        <ul class="pagination pagination-lg justify-content-center">
+          <li class="page-item"><a class="page-link" href="/carrito/envio">1. Envío</a></li>
+          <li class="page-item"><a class="page-link" href="/carrito/pago">2. Pago</a></li>
+          <li class="page-item active" aria-current="page"><a class="page-link" href="#" style="background-color: black; border: black">3. Confirmación<span class="sr-only">(current)</span></a></li>        
+        </ul>
+      </nav>
+
+  <section class="col-12 cuerpo">
+    <section class="column col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center">
+      <div>
+      <h1 class="col md-6 border-bottom border-dark">CONFIRMACION DE COMPRA</h1>
+      <br>
+      <h5>Muchas gracias por confiar en nosotros. A continuación, detallamos su compra:</h5>
+      <br>
+      </div>      
+      
+      <!--Resumen del pedido-->
+
+      <!--Resumen con foto-->
+      <div class="resumen card col-12 border-dark">
+        <div class="card-body">
+          <h2 class="card-title">Resumen del pedido</h2>
+        </div>
+        <article class="valores row">
+          <div class="col-6">
+            <h6>Costo</h6>
+            <br>
+            <h6>Descuento</h6>
+            <br>
+            <h6>Desc. Codig. Promo</h6>
+            <br>
+            <h6>Envío</h6>
+            
+          </div>
+          <div class="col-6">
+            <h6>Valor</h6>
+            <br>
+            <h6>(Valor)</h6>
+            <br>
+            <h6>(Valor)</h6>
+            <br>
+            <h6>Valor</h6>
+          </div>
+
+        </article>
+        <article class="valores row border-top border-bottom border-dark">
+          <div class="col-6">
+            <h2>TOTAL</h2>
+            <h6>Op. Financiación</h6>
+          </div>
+          <div class="col-6">
+            <h2>Precio Final</h2>
+            <h6>Detalle Cuotas</h6>
+          </div>
+        </article>
+        <br>
+
+        <div>
+          <div class="row  border-bottom border-dark">   
+            <div class="col-6">
+              <img src="/img/fixievioleta.jpg" class="card-img" alt="No se puede mostrar la imagen">
+            </div>
+            <div class="col-6">            
+                <h5 class="card-title">Scott - Speedster 10</h5>           
+                <button type="button" class="btn btn-dark" style="background-color: black; font-family: 'Barlow Condensed', sans-serif;" data-toggle="modal" data-target="#exampleModal">Detalle del Producto</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Scott - Speedster 10</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <h6 class="card-title">Especificaciones técnicas</h6>
+                        <p class="card-text">La nueva Speedster es más ligera y presenta su mejor estilo. El nuevo kit de cuadro incluye una horquilla de carbono, cableado interior, dirección cónica y una geometría de prestaciones. Cambios Shimano 105 Black ST-5800 Dual control 22 Speed. Rodado 29 en talle de cuadro M</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal" style="background-color: black">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <br>
+                <br>
+            </div>            
+          </div>
+        </div>
+            <div class="col-12 border-bottom border-dark">
+              <h2>Datos de envío</h2>
+              <h6>Nombre</h6>
+              <h6>Dirección</h6>
+              <h6>Localidad, Provincia, CP</h6>
+              <h6>Teléfono</h6>
+              <h6>Mail</h6>
+            </div>
+            <div class="col-12">
+              <h2>Forma de envío</h2>
+              <h6>Detalle</h6>
+            </div>
+      </div>
+      <br>
+      <h2 class="text-center text-white-50" style="background-color: black">Recibirá un mail con el detalle de su compra y link para seguimiento de envío</h2>
+
+    </section>
+  </section>
+<br>
+<br>
+    <!--Footer-->
+    <%- include('../partials/footer.ejs') %>
+  </main>
+</body>
+</html>

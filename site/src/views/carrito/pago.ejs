@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/carritoPago.css">
+    <title>Bykes - Make it yours</title>
+</head>
+
+<body>
+
+  <main class="container-fluid">
+
+<!--Paginación-->
+<nav aria-label="...">
+  <ul class="pagination pagination-lg justify-content-center">
+    <li class="page-item"><a class="page-link" href="/carrito/envio">1. Envío</a>
+    </li>
+    
+    <li class="page-item active bg-dark" aria-current="page">
+      <a class="page-link" href="#" style="background-color: black; border: black">2. Pago</a>
+    </li>
+
+    
+
+    <li class="page-item"><a class="page-link" href="/carrito/confirmacion">3. Confirmación</a>
+    </li>
+  </ul>
+</nav>
+
+<section class="row titulo col-12 border-bottom border-dark justify-content-center">
+  <h2>METODO DE PAGO</h2>
+</section>
+
+
+
+<section class="container row col col-12">
+<!--Formulario Tarjeta-->
+<div class="row col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<div class="form-row">
+                    
+                    <form class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                      <h2>Ingresa tus datos</h2>
+                                <div class="form-row border-bottom border-dark">
+                                  <div class="col-md-6 mb-3">
+                                      <input type="text" class="form-control" id="validationServer01" name="numeroTarjeta" required placeholder="N° de la Tarjeta">
+                                  </div>
+                                  
+                                  <div class="col-md-6 mb-3">
+                                      <input type="text" class="form-control" id="validationServer02" placeholder="Titular de la tarjeta" name="nombreTitular" required>
+                                  </div>                              
+                                  <div class="col-md-6 mb-3">
+                                      <input type="number" class="form-control" id="validationServer01" name="dni" required placeholder="DNI">
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                    <input type="date" class="form-control" id="validationServer01" name="fechaVencimiento" required placeholder="">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                  <input type="text" class="form-control" id="validationServer01" name="codigoSeguridad" required placeholder="Codigo de Seguridad">
+                              </div>                                     
+                                </div>                                          
+                                <br>
+                                <div class="col-md-12 mb-3">
+                                  <input type="tel" class="form-control" id="validationServer02" placeholder="Suma tu codigo promocional!" name="codigoPromo" value="">
+                              </div>                              
+                                <a type="submit" href="/carrito/confirmacion" class="col-md-12 btn btn-dark btn-lg btn-block" style="background-color: black">FINALIZAR COMPRA</a>
+                            </form>
+</div>
+<br>
+</div>
+<br>
+
+<!--Resumen con foto-->
+<div class="resumen card col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4">
+
+            <div class="card-body col-6">
+              <h5 class="card-title">Resumen del pedido</h5>
+            </div>
+            <article class="valores row">
+              <div class="col-6">
+                <h6>Costo</h6>
+                <br>
+                <h6>Descuento</h6>
+                <br>
+                <h6>Envío</h6>
+                <br>
+              </div>
+              <div class="col-6">
+                <h6>Valor</h6>
+                <br>
+                <h6>Valor</h6>
+                <br>
+                <h6>Valor</h6>
+                <br>
+              </div>
+            </article>
+
+            <div class="card mb-3">
+              <div class="row no-gutters">   
+                <div class="col-md-4">
+                  <img src="/img/fixievioleta.jpg" class="card-img" alt="No se puede mostrar la imagen">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Scott - Speedster 10</h5>
+                    <button type="button" class="btn btn-dark" style="background-color: black; font-family: 'Barlow Condensed', sans-serif;" data-toggle="modal" data-target="#exampleModal">Detalle del Producto</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Scott - Speedster 10</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <h6 class="card-title">Especificaciones técnicas</h6>
+                            <p class="card-text">La nueva Speedster es más ligera y presenta su mejor estilo. El nuevo kit de cuadro incluye una horquilla de carbono, cableado interior, dirección cónica y una geometría de prestaciones. Cambios Shimano 105 Black ST-5800 Dual control 22 Speed. Rodado 29 en talle de cuadro M</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-dismiss="modal" style="background-color: black">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </div>
+                </div>
+              </div>
+            </div>
+
+</div>
+</section>
+
+<!--Footer-->
+<%- include('../partials/footer.ejs') %>
+
+
+  </main>
+</body>
+</html>
