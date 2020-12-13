@@ -1,4 +1,6 @@
-# ___Bicicletas customizables___
+# ___BYKES___
+
+Proyecto integrador desarrollado en Digital House, donde planificamos nuestra primera aplicación, un ecommerce para vender bicicletas.
 ___
 
 + ## ___Integrantes___
