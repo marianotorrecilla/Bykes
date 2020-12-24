@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/carritoLista.css">
+    <title>Bykes - Make it yours</title>
+</head>
+<body>
+    <main class="container-fluid">
+
+        <!--Navbar-->
+        <%- include('../partials/headerNegro.ejs') %>
+
+        <div class="col-12 titulo">
+            <h2 class="border-bottom border-dark text-center">SU CARRITO</h2>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center">
+            
+                <div class="card col-4 d-flex justify-content-center" style="width: 18rem;">
+                
+                    <div class="card-body ">
+                    
+                    <p class="card-text">A continuación lo redireccionaremos a Mercado Pago para que finalice su compra. No es necesario que posea una cuenta para efectuar el pago</p>
+                    <a href="<%= global.init_point %>" class="btn btn-dark btn-lg btn-block" style="background-color: black">
+                        PAGAR LA COMPRA
+                    </a>
+                    </div>
+              </div>
+            
+            
+        </div>
+    </main>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
